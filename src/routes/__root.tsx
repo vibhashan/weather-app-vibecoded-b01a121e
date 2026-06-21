@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Vibecoded Weather App" },
+      { name: "description", content: "This is a fully vibe coded weather app with data pulled in using Open-Meteo APIs" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Vibecoded Weather App" },
+      { property: "og:description", content: "This is a fully vibe coded weather app with data pulled in using Open-Meteo APIs" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Vibecoded Weather App" },
+      { name: "twitter:description", content: "This is a fully vibe coded weather app with data pulled in using Open-Meteo APIs" },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/00baa16d-e0b2-4808-a4a3-f3c41e9d39bc/id-preview-43fc99f1--19e13472-2c38-4147-bf37-76bab42d6628.lovable.app-1782046426808.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/00baa16d-e0b2-4808-a4a3-f3c41e9d39bc/id-preview-43fc99f1--19e13472-2c38-4147-bf37-76bab42d6628.lovable.app-1782046426808.png" },
     ],
     links: [
       {
