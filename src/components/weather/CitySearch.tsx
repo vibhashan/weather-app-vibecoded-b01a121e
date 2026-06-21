@@ -57,7 +57,7 @@ export function CitySearch({ onSelect }: Props) {
                       setQuery(`${r.name}${r.country ? `, ${r.country}` : ""}`);
                       setOpen(false);
                     }}
-                    className="flex w-full cursor-pointer items-start gap-2 px-4 py-2.5 text-left text-sm hover:bg-primary hover:text-primary-foreground"
+                    className="flex w-full cursor-pointer items-start gap-2 px-4 py-2.5 text-left text-sm hover:bg-muted hover:text-foreground"
                   >
                     <MapPin className="mt-0.5 size-4 shrink-0 text-muted-foreground" />
                     <span className="flex-1">
