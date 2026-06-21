@@ -5,6 +5,7 @@ import { CloudSun } from "lucide-react";
 import { CitySearch } from "@/components/weather/CitySearch";
 import { WeatherDashboard } from "@/components/weather/WeatherDashboard";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 import type { GeoResult } from "@/lib/openMeteo";
 
 const searchSchema = z.object({
@@ -60,17 +61,20 @@ function Index() {
   return (
     <div className="min-h-screen bg-background">
       <main className="mx-auto w-full max-w-4xl px-4 py-10 sm:py-14">
-        <header className="mb-8 flex flex-col items-start gap-3">
-          <div className="flex items-center gap-2 text-primary">
-            <CloudSun className="size-6" />
-            <span className="text-sm font-medium uppercase tracking-wider">Weather</span>
+        <header className="mb-8 flex items-start justify-between gap-4">
+          <div className="flex flex-col items-start gap-3">
+            <div className="flex items-center gap-2 text-primary">
+              <CloudSun className="size-6" />
+              <span className="text-sm font-medium uppercase tracking-wider">Weather</span>
+            </div>
+            <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
+              Current conditions, anywhere.
+            </h1>
+            <p className="text-muted-foreground">
+              Search a city to see live temperature, wind, cloud cover and pressure.
+            </p>
           </div>
-          <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-            Current conditions, anywhere.
-          </h1>
-          <p className="text-muted-foreground">
-            Search a city to see live temperature, wind, cloud cover and pressure.
-          </p>
+          <ThemeToggle />
         </header>
 
         <div className="mb-8">
