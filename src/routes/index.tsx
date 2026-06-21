@@ -1,5 +1,5 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { zodValidator, fallback } from "@tanstack/zod-adapter";
+import { zodValidator } from "@tanstack/zod-adapter";
 import { z } from "zod";
 import { CloudSun } from "lucide-react";
 import { CitySearch } from "@/components/weather/CitySearch";
@@ -8,9 +8,9 @@ import { Button } from "@/components/ui/button";
 import type { GeoResult } from "@/lib/openMeteo";
 
 const searchSchema = z.object({
-  lat: fallback(z.number().optional(), undefined),
-  lon: fallback(z.number().optional(), undefined),
-  name: fallback(z.string().optional(), undefined),
+  lat: z.number().optional(),
+  lon: z.number().optional(),
+  name: z.string().optional(),
 });
 
 export const Route = createFileRoute("/")({
